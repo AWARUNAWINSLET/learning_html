@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-left: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+    }
+  
+    th, td {
+      padding: 12px 20px;
+      text-align: center;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    th {
+      background-color: #f4f4f4;
+      color: #333;
+      font-weight: 600;
+    }
+  
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
+  
+<body>
+    <h3>Simple Table</h3>
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Tamil</th>
+            <th>English</th>
+            <th>Maths</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>Anitha</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Aruna</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Aswini</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>colspan Span</h3>
+    <table>
+        <tr>
+            <th colspan="2">Student Name</th>
+            <th>Tamil</th>
+            <th>English</th>
+            <th>Maths</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <th colspan="4">Marks</th>
+        </tr>
+        <tr>
+            <td>Anitha</td>
+            <td>V</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Aruna</td>
+            <td>Winslet</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>colspan Span</h3>
+    <table>
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th>Tamil</th>
+            <th>English</th>
+            <th>Maths</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <th colspan="4">Marks</th>
+        </tr>
+        <tr>
+            <td>Anitha</td>
+            <td>V</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Aruna</td>
+            <td>Winslet</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>89</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Column Group is not Learned (Not Highly Used)</h3>
+    <hr>
+    <h3>Enhance the Table using thead, tbody, tfoot</h3>
+    <table>
+        <caption>Caption for the Table</caption>
+        <thead>
+            <tr>
+                <th>Heading 1 </th>
+                <th>Heading 2 </th>
+                <th>Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--Not Used Commonly-->
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+        </thead>
+    </table>
+    <hr>
+    <h3>Heading Scope its consider as the Heading of the table</h3>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">Column Heading 1</th>
+                <th scope="col">Column Heading 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Row Heading 1</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+</body>
+
+</html>

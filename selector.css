@@ -1,0 +1,76 @@
+div[data-color]{
+    color: red;
+}
+div[data-value = "red"]{
+    color: blue;
+}
+div[data-contain*="foo"]{
+    color: green;
+}
+div[class~="red"]{
+    color: brown;
+}
+div[data-begin^="foo"]{
+    color: green;
+}
+div[data-end$="foo"]{
+    color: green;
+}
+div p{
+    text-shadow: red 2px 2px 4px;
+}
+.Divcolor > p{
+    color: red;
+}
+a:active{
+    color: red;
+}
+:is(h5,h6)
+{
+    color: chartreuse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+  padding: 10px;
+  margin: 10px 1px;
+  border: 2px solid #ccc;
+}
+
+:target {
+  background-color: yellow;
+  border-color: orange;
+}
+input:checked{
+    accent-color: red;
+}
+table{
+    width: 50%;
+    border-collapse:collapse;
+}
+th,td{
+    border: 2px solid #ccc;
+}
+tr:nth-child(even){
+    background-color: aliceblue;
+}
+tr:nth-child(odd){
+    background-color:antiquewhite;
+}
+p:last-of-type{
+    background-color: blue;
+    text-decoration: underline;
+}
+input:not([disabled],.example)
+{
+    background-color: burlywood;
+}
+.bgcolor{
+    background-color: #ccc;
+    height: 80px;
+}
+.bgcolor input{
+    margin: 30px;
+}
+.bgcolor input:focus-within{
+    background-color: blue;
+}

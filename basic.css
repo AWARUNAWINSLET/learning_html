@@ -1,0 +1,43 @@
+.fruits{list-style-type:armenian}
+.vegi{list-style-type: square;}
+
+span {
+ text-shadow: rgb(255, 153, 0) 0 0 3px, green 4px 4px 10px;
+}
+/* Alternate Formatting */
+span {
+ text-shadow:
+ rgb(9, 5, 238) 0 0 3px,
+ rgb(12, 183, 235) 4px 4px 10px;
+}
+/* text shadow */
+.Span1{
+    text-shadow: yellow 0 0 3px;
+   }
+   .Span2
+    {
+    text-shadow: green 4px 4px 10px;
+
+    }
+/* background color */
+    .highlight {
+        background-color: rgba(211, 120, 0, 0.516);
+       
+
+      }
+      
+      p{color:#0000FF
+      }
+     /* backgroung gradient */
+      
+     .gradient-box {
+      height: 200px;
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      color: #d71c1c;
+      background:linear-gradient(to bottom, #1e90ff, #d877b6);
+    }
+    
+
+  

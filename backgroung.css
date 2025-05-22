@@ -1,0 +1,98 @@
+/* simple background */
+div {
+ background-color: red; /* red */
+}
+.o{
+    background-color: rgb(234, 31, 146);
+}
+p{
+    color: rgb(231, 78, 12);
+}
+.meow{
+
+
+ background-image: url(dora.jpg);
+ background: red;
+}
+.bg-hover-box {
+    background-image: url(dora.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 200px;
+    transition: background 0.5s ease;
+    color: rgb(249, 29, 29);
+    display: flex;
+    align-items: ;
+    justify-content: center;
+  }
+  
+  .bg-hover-box:hover {
+    filter: brightness(0.7);
+  }
+
+  body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.parent {
+  background-image: url('nobi.jpg');
+  background-size: cover;
+
+  color: rgb(239, 15, 15);
+}
+
+.child-inherit,
+.child-initial {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+/* Inherit parent's background */
+.child-inherit {
+  background-image: inherit;
+  background-size: inherit;
+}
+
+/* Reset to default (no background) */
+.child-initial {
+  background-image: initial;
+  background-color: #2c3e50; /* Just for contrast */
+}
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    border: 2px solid #333;
+    background-image: url('nobi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Cover: Fills the box, may crop */
+  .cover {
+    background-size: cover;
+  }
+  
+  /* Contain: Fits entire image, may leave empty space */
+  .contain {
+    background-size: contain;
+  }
+  
+  /* Fixed size */
+  .fixed-size {
+    background-size: 100px 100px;
+  }
+  
+  /* Auto: keeps original image size */
+  .auto {
+    background-size: auto;
+  }
+
+  ?

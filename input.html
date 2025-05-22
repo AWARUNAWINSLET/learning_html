@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+    <h3>Text Box</h3>
+    <input type="text" value="Winslet">
+    <h3>Text box with size</h3>
+    <input type="text" size="2">
+    <h3>Check Box</h3>
+    <h5>Sports Interested</h5>
+    <input type="checkbox" checked="checked">Football
+    <input type="checkbox">Volleyball
+    <input type="checkbox">Basket Ball
+    <h3>Radio Button</h3>
+    <input type="radio" name="color" id="red" value="red">Red
+    <input type="radio" name="color" id="yellow" value="yellow">Yellow
+    <input type="radio" name="color" id="blue" value="blue">Blue
+    <h3>Label For Add</h3>
+    <label>
+        <input type="text" name="value">
+        Enter Text
+    </label>
+    <hr>
+    <input type="text" name="entervalue" id="value">
+    <label for="value">Enter Here</label>
+    <h3>Fieldset disabled</h3>
+    <input disabled="disabled" value="ARUNA">
+    <h3>Fieldset</h3>
+    <fieldset>
+        <legend>Theme color</legend>
+        <p>
+            <input type="radio" id="red" value="red"><label for="red">Red</label>
+        </p>
+        <p>
+            <input type="radio" id="yellow" value="yellow"><label for="yellow">Yellow</label>
+        </p>
+        <p>
+            <input type="radio" id="blue" value="blue"><label for="bluw">Blue</label>
+        </p>
+    </fieldset>
+    <hr>
+    <h2>Required Field</h2>
+    <form>
+        <input type="text" required>
+        <input type="submit">
+    </form>
+    <hr>
+    <form>
+        <input type="text" minlength="2" maxlength="7" required>
+        <input type="submit">
+    </form>
+    <form>
+        Marks: <input type="number" size="6" name="marks" min="0" max="100">
+        <p>
+            Subject Feedback: <input type="range" size="2" name="feedback" min="1" max="5" />
+        </p>
+    </form>
+    <hr>
+    <h3>If Number Only</h3>
+    <form>
+        <input type="text" pattern="\d*" title="Numbers only, please.">
+        <button type="submit">Submit</button>
+    </form>
+    <h3>File</h3>
+    <input type="file">
+    <h3>File only Image</h3>
+    <form>
+        <input type="file" name="file" id="file" accept="image/*" title="accept only image">
+        <button type="submit">Submit</button>
+    </form>
+    <form>
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <input pattern="\d*" name="number" required>
+        <input type="submit" value="Publish"> <!-- form will be validated -->
+        <input type="submit" value="Save" formnovalidate> <!-- form will NOT be validated -->
+    </form>
+    <hr>
+    <h3>Color</h3>
+    <input type="color" name="favcolor" value="#0000FF">
+    <h3>Password and Paceholder</h3>
+    <input type="password"  name="password" placeholder="Enter your password" />
+    <hr>
+    <h3>File</h3>
+    <input type="file" name="fielsubmission">
+    <h3>Multiple Files</h3>
+    <input type="file" name="fielsubmission" multiple>
+    <h3>Accept Files</h3>
+    <input type="file" name="OnlyFile" accept="image/*">
+    <h3>Multiple Files</h3>
+    <input type="file" name="MultipleFiles" accept="image/x-png,image/gif,image/jpeg">
+    <hr>
+    <h3>Button</h3>
+    <input type="button" value="Button">
+    <button type="button" > Button</button>
+    <h3>Submit</h3>
+    <input type="submit" value="Submit">
+    <button type="button"><img src="dora.jpg"><br>Submit</button>
+    <h3>Reset</h3>
+    <input type="reset" value="Reset">
+    <h3>Hidden</h3>
+    <input type="hidden" value="HiddenValue">
+    <hr>
+    <h3>Tel</h3>
+    <input type="tel" value="948691528">
+    <h3>Email</h3>
+    <form><input type="email" name="emai"><button>Submit</button></form>
+    <h3>Range</h3>
+    <input type="range" min="" max="" step="" />
+    <h3>Search</h3>
+    <input type="search" name="searchvalue">
+    <h3>Image</h3>
+    <input type="image" src="image.png" alt="image">
+    <h3>Week</h3>
+    <input type="week">
+    <h3>URL</h3>
+    <input type="url" name="url">
+    <h3>DateTime Local</h3>
+    <input type="datetime-local">
+    <h3>Date Time Global</h3>
+    <input type="datetime">
+    <h3>Month and Time</h3>
+    <input type="month">
+    <input type="time">
+    <h3>Date</h3>
+    <input type="date">
+</body>
+
+</html>

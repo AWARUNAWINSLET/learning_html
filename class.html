@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dora.jpg" sizes="">
+    <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
+    <link rel="prev" href="http://stackoverflow.com/documentation/java/topics">
+<link rel="next" href="http://stackoverflow.com/documentation/css/topics">
+    <title>Classes and IDs</title>
+</head>
+<style>
+    /* Two Ways to declare style */
+    /* Option 1 */
+    .Change-font-size,
+    .Change-font-1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+
+    /* Option 2 */
+    p.Change-font-size,
+    p.Change-font-1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+    }
+
+    #Change-font-color {
+        color: red;
+    }
+
+    /* path of Assign class */
+    .divclass>.para1 {
+        color: blue;
+    }
+</style>
+
+<body>
+    <h3>Classes and IDs</h3>
+    <p><mark>Class="aruna"</mark> -> Indicates the Class of the element (non-unique)</p>
+    <p><mark>ID</mark> -> Indicates the ID of the element (unique in the same context)</p>
+    <hr>
+    <h3>Let us take the above Example for Class</h3>
+    <p class="Change-font-size"><mark>Class</mark> -> Indicates the Class of the element (non-unique)</p>
+    <p class="Change-font-size"><mark>ID</mark> -> Indicates the ID of the element (unique in the same context)</p>
+    <hr>
+    <h3>Let us take the above Example for ID Same Id name is not a good practice</h3>
+    <p>IDs are commonly used to get the Javascript Like var html = document.getElementById("aDiv").innerHTML;</p>
+    <p id="Change-font-color"><mark>Class</mark> -> Indicates the Class of the element (non-unique)</p>
+    <p id="Change-font-color"><mark>ID</mark> -> Indicates the ID of the element (unique in the same context)</p>
+    <hr>
+    <h3>Nested HTML Class</h3>
+    <div class="divclass">
+        <p class="para1">This is Paragraph</p>
+        <p>This is Para 2</p>
+    </div>
+    <div class="divclass2">
+        <p class="para1">This is Paragraph</p>
+        <p>This is Para 2</p>
+    </div>
+    <hr>
+    <p>Learn Section 10.3 and 10.4</p>
+</body>
+
+</html>

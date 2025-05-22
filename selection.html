@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <h3>Select Name</h3>
+    <select name="Games" id="games" >
+        <option value="Football">Football</option>
+        <option value="Volleyball">Volleyball</option>
+        <option value="Cricket">Cricket</option>
+        <option value="Tennis">Tennis</option>
+    </select>
+    <h3>Multiple Name</h3>
+    <select name="Games" id="games" multiple>
+        <option value="Football">Football</option>
+        <option value="Volleyball">Volleyball</option>
+        <option value="Cricket">Cricket</option>
+        <option value="Tennis">Tennis</option>
+    </select>
+    <h3>Option Group</h3>
+    <select name="Subgroup" id="Subgroup">
+        <option value="Class 1">Class 1</option>
+        <optgroup label="Class2">
+            <option value="Class2A">A</option>
+            <option value="Class2A">B</option>
+        </optgroup>
+        <optgroup label="Class3">
+            <option value="Class3">A</option>
+            <option value="Class3">B</option>
+        </optgroup>
+        <optgroup label="Class4" disabled>
+            <option value="ClassA">A</option>
+            <option value="ClassA">B</option>
+        </optgroup>
+    </select>
+</body>
+</html>
